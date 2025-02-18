@@ -1,6 +1,8 @@
 let taskInput = document.querySelector("input");
 let addButton = document.querySelector(".addBtn");
 let tasksUl = document.querySelector("ul");
+let dark = document.querySelector(".dark");
+let body = document.querySelector("body")
 
 addButton.addEventListener("click", addTask);
 
@@ -29,3 +31,13 @@ function finishTask(event) {
         parent.classList.remove("line-through");
     }
 }
+
+function toDarkMode() {
+    body.classList.toggle("toDarkMode")
+}
+
+dark.addEventListener("click", () => {
+    toDarkMode()
+})
+
+

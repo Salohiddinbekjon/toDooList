@@ -81,3 +81,17 @@ ul.tasks li.line-through {
 ul.tasks li span {
     flex-grow: 1;
 }
+
+.todo-list .dark {
+    border: 2px solid green;
+    width: 300px;
+    padding: 5px;
+    background-color: #888;
+    color: white;
+    font-size: 16px;
+}
+
+.toDarkMode {
+    background-color: black;
+    color: grey;
+}
