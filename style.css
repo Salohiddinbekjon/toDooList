@@ -1,0 +1,83 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Todo List Container */
+.todo-list {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Heading */
+.todo-list h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Input Section */
+.todo-list input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Add Button */
+.addBtn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.addBtn:hover {
+    background-color: #45a049;
+}
+
+/* Tasks List */
+ul.tasks {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Task List Items */
+ul.tasks li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 3px solid gray;
+    font-size: 18px;
+}
+
+ul.tasks li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Line Through for Completed Tasks */
+ul.tasks li.line-through {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Small Styling Adjustments */
+ul.tasks li span {
+    flex-grow: 1;
+}
